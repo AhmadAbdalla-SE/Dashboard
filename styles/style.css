@@ -1,0 +1,934 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    font-size: 10px;
+}
+.exo-2- {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+body{
+    display: flex;
+}
+aside{
+    width: 20%;
+    border: 1px solid #F9E9EA;
+    position: relative;
+}
+.asidecontainer{
+    position: fixed;
+    margin: 1rem;
+    margin-inline: 1rem;
+}
+.asidecontainer p{
+    font-size: 12px;
+    font-weight: 600;
+    margin: 1rem;
+}
+.asidehead{
+    display: flex;
+}
+.leftaside{
+    width: 70%;
+    display: flex;
+}
+.rightaside{
+    width: 40%;
+    text-align: center;
+    align-content: center;
+}
+.rightasideright{
+    width: 40%;
+    text-align: center;
+    align-content: center;
+    padding-bottom: 1rem;
+}
+.blueblock{
+    border: 1px solid #c8ddff;
+    background-color: #EFF6FF;
+    border-radius: 1.2rem;
+    padding: 10px;
+    color: blue;
+    cursor: pointer;
+    margin-top: 10px;
+    margin: 5px;
+}
+
+.block{
+    border-radius: 1.2rem;
+    padding: 10px;
+    color: #6A7282;
+    cursor: pointer;
+    margin-top: 10px;
+    margin: 5px;
+    transition: background-color 0.2s ease-in;
+}
+.block:hover{
+    background-color: #F9FAFB;
+}
+.spanflex span{
+    font-size: 9px;
+    font-weight: 600;
+}
+.flexbox{
+    display: flex;
+}
+.spanflex{
+    align-content: center;
+}
+.blockone{
+    border-radius: 1.2rem;
+    padding: 10px;
+    color: #6A7282;
+    cursor: pointer;
+    margin-top: 10px;
+    margin: 5px;
+    transition: background-color 0.2s ease-in, transform 0.2s ease-in;
+}
+.blockone:hover{
+    transform: translateX(3px);
+    background-color: #F9FAFB;
+}
+.blockone:hover .blue{
+    background-color: #c8ddff;
+}
+.blockone:hover .green{
+    background-color: #bdf9d3;
+}
+.blockone:hover .purple{
+    background-color: #d6b3fb;
+}
+.blockone:hover .orange{
+    background-color: #fdd7a1;
+}
+.emojibox{
+    padding-top: 1rem;
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 1rem;
+}
+.emojibox{
+    padding-top: 1rem;
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 1rem;
+}
+.emojiboxfive{
+    padding-top: 1rem;
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 1rem;
+    position: relative;
+}
+.posi{
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    border-radius: 6px;
+    background-color: red;
+    color: white;
+    width: 12px;
+    height: 12px;
+}
+.emojiboxone{
+    padding-top: 1rem;
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 1rem;
+    margin: auto;
+}
+main{
+    width: 100%;
+    height: max-content;
+    background-color: #F9FAFB;
+}
+nav{
+    width: 99.5%;
+    border: 1px solid #F9E9EA;
+    margin: 0.5rem;
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: 0 1px 1px #D8D6E7;
+}
+.emojinavbox{
+    font-size: large;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    margin-left: 1rem;
+    background-color: #3943E7;
+    color: white;
+    box-shadow: 0 2px 2px #3943E7;
+}
+.leftnav{
+    display: flex;
+    align-items: center;
+}
+.leftside p{
+    font-size: 9px;
+    font-weight: 600;
+}
+.leftasideright p{
+    font-size: 9px;
+    font-weight: 600;
+}
+.connection{
+    
+    display: flex;
+    min-height: ;
+}
+.connection span{
+    background-color: #F0FDF4;
+    border: 1px solid #DBFCE7;
+    border-radius: 4px;
+    padding: 0 0.5rem 0.5rem 0.5rem;
+    color: #008236;
+}
+.beforedot{
+    width: 100%;
+    align-content: center;
+    margin-right: 1rem;
+}
+.connection span i{
+    text-align: center;
+    height: 3px;
+    width: 3px;
+    border-radius: 1.5px;
+    color: #00a63e;
+    margin-left: 10px;
+    font-size: 4px;
+    padding-bottom: 10px;
+}
+.emojinav{
+    border: 1px solid #e5e7eb;
+    transition: background-color 0.2s ease-in;
+}
+.emojinav:hover{
+    background-color: #e6e6e6;
+}
+.account{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid #F9E9EA;
+    box-shadow: 0 1px 1px #D8D6E7;
+    border-radius: 1rem;
+    background-color: white;
+    transition: box-shadow 0.3s ease-in;
+}
+.account:hover{
+    box-shadow: 0 3px 3px #D8D6E7;
+}
+.accountimage{
+    width: 3.5rem;
+    margin: 1rem;
+}
+.accountimage img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.navcontainer{
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+}
+.summarycards{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    width: 33.333%;
+    border: 1px solid #F9E9EA;
+    margin-inline: 0.5rem;
+    border-radius: 1rem;
+    background-color: white;
+    box-shadow: 0 1px 1px #D8D6E7;
+}
+.cardcontainer{
+    padding: 3rem;
+}
+.cardcontainer h3{
+    font-size: 3.5rem;
+    margin-top: 1rem;
+}
+p{
+    color: #6a7282;
+    font-size: 1.6rem;
+}
+.cardcontainer span{
+    font-size: medium;
+    display: block;
+    margin-top: 1rem;
+}
+.rightnav{
+    width: 50%;
+}
+.rightinfocard{
+    display: flex;
+}
+.infocardcontainer{
+    display: flex;
+    justify-content: space-between;
+}
+.barrating{
+    width: 100%;
+    height: 0.7rem;
+    border-radius: 5px;
+    background-color: #e5e7eb;
+    margin-block: 15px;
+}
+.orangebar{
+    width: 50%;
+    height: 0.7rem;
+    border-radius: 5px;
+    background-color: #ff6900;
+    animation: groworange 1s forwards;
+}
+.redbar{
+    width: 100%;
+    height: 0.7rem;
+    border-radius: 5px;
+    background-color: #fb2c36;
+    animation: growred 1s forwards;
+}
+.pinkbar{
+    width: 80%;
+    height: 0.7rem;
+    border-radius: 5px;
+    background-color: #f6339a;
+    animation: growpink 1s forwards;
+}
+.greenbar{
+    width: 86%;
+    height: 0.7rem;
+    border-radius: 5px;
+    background-color: #10b981;
+    animation: growgreen 1s forwards;
+}
+.bluebar{
+    width: 82.5%;
+    height: 0.7rem;
+    border-radius: 5px;
+    background-color: #615fff;
+}
+.colorgreen{
+    color: #00a63e;
+}
+.colorred{
+    color: #e7000b;
+}
+.gridsection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "c1 c2 c2"
+    "c3 c2 c2"
+    "c4 c5 c7"
+    "c4 c6 c7"
+    ;
+}
+.child{
+    font-size: 3rem;
+    border: 1px solid #F9E9EA;
+    margin: 0.5rem;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 1px 1px #D8D6E7;
+}
+.c1{
+    grid-area: c1;
+}
+.c2{
+    grid-area: c2;
+}
+.c3{
+    grid-area: c3;
+}
+.c4{
+    grid-area: c4;
+}
+.c5{
+    grid-area: c5;
+}
+.c6{
+    grid-area: c6;
+}
+.c7{
+    grid-area: c7;
+}
+.gridheader{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+.gridcontainer{
+    padding: 0.5rem;
+    width: 100%;
+    height: 100%;
+}
+.gridheaderright span{
+    cursor: pointer;
+    transition: color 0.1s ease-in;
+    color: #4a5565;
+}
+.gridheaderright span:hover{
+    color: black;
+}
+.accountcain{
+    display: flex;
+    
+}
+.accountinfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+}
+.accountinfo p{
+    font-size: 1.1rem;
+}
+.accountcash p{
+    font-size: small;
+    font-weight: bold;
+    color: black;
+}
+.accountcardright{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1rem;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    background-color: #fbf9fa;
+}
+.accountcardright{
+    
+}
+tr{
+    margin-bottom: 10rem;
+}
+td, th{
+    padding: 2rem 2rem;
+}
+.tableright{
+    display: flex;
+    justify-content: start;
+    padding-inline: rem;
+}
+.imagetable{
+    width: 3.5rem;
+    border-radius: 1.75rem;
+    justify-items: start;
+}
+.usertableinfo{
+    margin-right: 1rem;
+}
+.imagetable img{
+    width: 100%;
+    border-radius: 1.75rem;
+}
+.emojicirclebig{
+    padding-top: 1rem;
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 1.75rem;
+    text-align: center;
+}
+.orange{
+    background-color: #ffedd4;
+    color: #f54a00;
+}
+.pink{
+    background-color: #fce7f3;
+    color: #e60076;
+}
+.darkorange{
+    background-color: #ffedd4;
+    color: #9f2d00;
+}
+.blue{
+    background-color: #e0e7ff;
+    color: #2b7fff;
+}
+.yellow{
+    background-color: #fef9c2;
+    color: #d08700;
+}
+.darkyellow{
+    background-color: #fef9c2;
+    color: #894b00;
+}
+.darkblue{
+    background-color: #e0e7ff;
+    color: #4f39f6;
+}   
+.red{
+    background-color: #ffe2e2;
+    color: #e7000b;
+}
+.cyan{
+    background-color: #cefafe;
+    color: #0092b8;
+}
+.green{
+    background-color: #dcfce7;
+    color: #00a63e;
+}
+.darkgreen{
+    background-color: #dcfce7;
+    color: #006045;
+}
+.darkred{
+    color: #9f0712;
+    background-color: #ffe2e2;
+}
+.purple{
+    color: #6e11b0;
+    background-color: #f3e8ff;
+}
+.spanbox{
+    padding: 2px 2px 4px 2px;
+    border-radius: 30px;
+}
+table{
+    width: 100%;
+    padding: 1rem;
+    border-collapse: collapse;
+    text-align: center;
+    border-spacing: 1rem;
+}
+thead tr th{
+    border-bottom: 1px solid #f6f3f4;
+}
+.activitycard{
+    display: flex;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    background-color: #eef2ff;
+    border-left: 4px solid #2b7fff;
+    margin-bottom: 1rem;
+}
+.activitycard .leftactivity{
+    color: #2b7fff;
+}
+.activitycardgreen{
+    display: flex;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    background-color: #f0fdf4;
+    border-left: 4px solid #00c951;
+}
+.activitycardgreen .leftactivity{
+    color: #00c951;
+}
+.emojicircleblue{
+    background-color: #e0e7ff;
+    color: #2b7fff;
+    padding-top: 1rem;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 2rem;
+    text-align: center;
+}
+.emojicirclegreen{
+    background-color: #dcfce7;
+    color: #00a63e;
+    padding-top: 1rem;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 2rem;
+    text-align: center;
+}
+.rightactivity{
+    width: 20%;
+}
+.midactivity{
+    width: 60%;
+    
+}
+.leftactivity{
+    width: 20%;
+}
+.gridfooter button{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    border-top: 1px solid #f6f3f4;
+    padding: 10px;
+    color: #2b7fff;
+    font-weight: 400;
+    font-size: medium;
+    background-color: white;
+}
+.invoicedetails h4{
+    text-align: center;
+    font-size: 13px;
+    margin-block: 0.5rem;
+}
+.invoicedetails p{
+    text-align: center;
+    font-size: 11px;
+}
+.gridbody{
+    font-size: 13px;
+    margin: 1rem;
+    align-content: center;
+    
+}
+.gridbodyheader{
+    text-align: center;
+}
+
+.cardcontainerinvoice{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.invoicecard{
+    width: 45%;
+    background-color: #fbf9fa;
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+.barcontainer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.bardetails{
+    
+}
+.barincome{
+    width: 15px;
+    height: 95px;
+    border-top-left-radius: 4px ;
+    border-top-right-radius: 4px;
+    background-color: #00c951;
+    margin: 1rem 1rem 1rem 0;
+    align-content: start;
+    margin-top: auto;
+    transition: opacity 0.1s ease-in;
+}
+.barincome:hover{
+    opacity: 0.5;
+}
+.barexpense{
+    width: 15px;
+    height: 42px;
+    border-top-left-radius: 4px ;
+    border-top-right-radius: 4px;
+    background-color: #ef4444;
+    margin: 10px 3px 10px 10px;
+    margin-top: auto;
+    transition: opacity 0.1s ease-in;
+}
+.barexpense:hover{
+    opacity: 0.5;
+}
+.height{
+    height: 98px;
+}
+.heightone{
+    height: 45px;
+}
+.heighttwo{
+    height: 92px;
+}
+.heightthree{
+    height: 38px;
+}
+.heightfour{
+    height: 96.4px;
+}
+.heightfive{
+    height: 45px;
+}
+.bartop{
+    display: flex;
+}
+.cssbars{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 10px;
+}
+.gridbodyheaderone p{
+    font-size: 1.1rem;
+    
+}
+.gridbodyheaderone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.div{
+    margin: 0.5rem;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+.color{
+    background-color: #10b981;
+}
+.colorone{
+    background-color: #ef4444;
+}
+.bar{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+.barbottom p{
+    font-size: 12px;
+    font-weight: 500;
+}
+.cardone{
+    background-color: #eff6ff;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border: 1px solid #eef2ff;
+    border-radius: 1rem;
+}
+.cardtwo{
+    background-color: #fbf9fa;
+    border: 1px solid #e5e7ebcc;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    transition: box-shadow 0.2s ease-in, transform 0.2s ease-in;
+}
+.cardtwo:hover{
+    transform: translate(0, -1.5px);
+    box-shadow: 0 3px 3px #e5e7ebcc;
+}
+.budgethead{
+    display: flex;
+    justify-content: space-between;
+}
+.bardetails{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.flip-card {
+      width: 100%;
+      height: 230px;
+      perspective: 1000px;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.6s ease;
+    transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner{
+    transform: rotateY(180deg);
+}
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+}
+.flip-card-front {
+    background: #ffffff;
+    color: #111;
+    border: 1px solid ;
+    width: 100%;
+    background-color: #372AAC;
+    color: white;
+}
+
+.flip-card-back {
+    background: #111;
+    color: #fff;
+    transform: rotateY(180deg);
+}
+.creditcardcontainer{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+.creditcardhead{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.footright p{
+    color: white;
+}
+.creditbody p{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+.creditcardhead{
+    margin-bottom: 40px;
+    font-size: 27px;
+}
+.creditbody{
+    margin-bottom: 40px;
+}
+.creditfoot p{
+    font-size: 12px;
+}
+.footleft p{
+    color: white;
+}
+.creditfoot{
+    display: flex;
+    justify-content: space-between;
+}
+.divfour{
+    height: 40%;
+    background-color: black;
+    width: 100%;
+}
+.divthree{
+    height: 15%;
+    background-color: white;
+    width: 100%;
+    margin-block: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.transient{
+    background: linear-gradient(to right, #fff 0%, #b6b6b6 50%, #fff 100%);
+    height: 50%;
+    width: 85%;
+    
+}
+.divtwo{
+    height: 10%;
+    
+    width: 100%;
+}
+.divone{
+    height: 30%;
+    background-color: black;
+    width: 100%;
+    background: linear-gradient(to right, #000 0%, #333 100%);
+}
+.divcontainer{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 85%;
+    height: 90%;
+}
+.lastdivcontainer{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    width: 100%;
+    height: 70%;
+}   
+.lastdiv{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    justify-items: flex-end;
+    
+
+}
+.lastdiv p{
+    margin-left: 13%;
+}
+.lastlastdiv{
+    display: flex;
+    width: 20%;
+    height: 80%;
+    border-radius: 10px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+
+
+}
+@keyframes groworange {
+  from { width: 0; }
+  to   { width: 50%; }
+}
+@keyframes growred {
+  from { width: 0; }
+  to   { width: 100%; }
+}
+@keyframes growpink {
+  from { width: 0; }
+  to   { width: 80%; }
+}
+@keyframes growgreen {
+  from { width: 0; }
+  to   { width: 86.5%; }
+}
+
+@media screen and (max-width:800px) {
+    .summarycards{
+        display: block;
+    }
+    .card{
+        width: 100%;
+    }
+    .gridsection{
+        display: block;
+    }
+    aside{
+        width: 13%;
+    }
+    .blueblock{
+        width: 45%;
+    }
+    .block{
+        width: 45%;
+    }
+    .block span{
+        display: none;
+    }
+    .blueblock span{
+        display: none;
+        width: fit-content;
+    }
+    .leftasideright{
+        display: none;
+    }
+    .asidecontainer p{
+        display: none;
+    }
+    .spanflex{
+        display: none;
+    }
+}
+@media screen and (max-width:600px) {
+    aside{
+        display: none;
+    }
+    
+}
